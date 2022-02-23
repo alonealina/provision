@@ -5,7 +5,7 @@ try {
     $release = isset($_POST['release'])? htmlspecialchars($_POST['release'], ENT_QUOTES, 'utf-8'): '';
     $release = $release == 'public' ? 1 : 0; 
 
-    $pdo = new PDO('mysql:host=mysql3.onamae.ne.jp; dbname=ejvxn_7k38a648; charset=utf8', 'ejvxn_admin', 'admin11-');
+    $pdo = new PDO('mysql:host=provision-db.c4w1biv461es.eu-west-2.rds.amazonaws.com; dbname=provision; charset=utf8', 'admin', 'Provision1234#');
     $sql = "INSERT INTO news (title, content, release_flg, notice_date) VALUES (:title, :content, :release, now())";
     $qry = $pdo->prepare($sql);
     $params = array(':title' => $title, ':content' => $content, ':release' => $release);

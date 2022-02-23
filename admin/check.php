@@ -2,7 +2,7 @@
     $login_id = isset($_POST['login_id'])? htmlspecialchars($_POST['login_id'], ENT_QUOTES, 'utf-8') : '';
     $password = isset($_POST['password'])? htmlspecialchars($_POST['password'], ENT_QUOTES, 'utf-8'): '';
 
-    $pdo = new PDO('mysql:host=mysql3.onamae.ne.jp; dbname=ejvxn_7k38a648; charset=utf8', 'ejvxn_admin', 'admin11-');
+    $pdo = new PDO('mysql:host=provision-db.c4w1biv461es.eu-west-2.rds.amazonaws.com; dbname=provision; charset=utf8', 'admin', 'Provision1234#');
     $qry = $pdo->prepare('select COUNT(*) from adminuser where login_id = "'. $login_id . '" and password = "' . $password .'"');
     $qry->execute();
     $count = $qry->fetchColumn();

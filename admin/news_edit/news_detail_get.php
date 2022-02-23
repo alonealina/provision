@@ -1,7 +1,7 @@
 <?php
 try {
     $id = $_GET['id'];
-    $pdo = new PDO('mysql:host=mysql3.onamae.ne.jp; dbname=ejvxn_7k38a648; charset=utf8', 'ejvxn_admin', 'admin11-');
+    $pdo = new PDO('mysql:host=provision-db.c4w1biv461es.eu-west-2.rds.amazonaws.com; dbname=provision; charset=utf8', 'admin', 'Provision1234#');
     $qry = $pdo->prepare('select * from news WHERE id = '. $id);
     $qry->execute();
     $html_array = [];
