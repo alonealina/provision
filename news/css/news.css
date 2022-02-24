@@ -1214,6 +1214,9 @@
       top: 50%;
       font-family: "Rajdhani", sans-serif;
     }
+    .news tr {
+      height: 50px;
+    }
     .news th, .news td {
       border-bottom: 1px solid #ccc;
       padding: 15px 0px;

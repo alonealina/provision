@@ -118,6 +118,10 @@
   }
   
   @media screen and (min-width:431px) {
+    #video {
+      width: 100%;
+    }
+
     #ui4 {
       width: 160px;
       display: block;
