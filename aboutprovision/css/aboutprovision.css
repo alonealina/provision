@@ -117,6 +117,31 @@
     }
   }
   
+
+  @media screen and (min-width:431px) and (max-width:2000px) {
+    #ui {
+      position: absolute;
+      top: 40%;
+      left: 15%;
+    }
+  }
+
+  @media screen and (min-width:2001px) and (max-width:2600px) {
+    #ui {
+      position: absolute;
+      top: 40%;
+      left: 25%;
+    }
+  }
+
+  @media screen and (min-width:2601px) {
+    #ui {
+      position: absolute;
+      top: 40%;
+      left: 35%;
+    }
+  }
+
   @media screen and (min-width:431px) {
     #ui4 {
       width: 160px;
@@ -617,8 +642,7 @@
     }
     body {
       background: rgba(0, 38, 108, 1);
-      height: 1900px;
-      ;
+      height: 110vh;
       display: flex;
       color: #fff;
     }
@@ -653,11 +677,7 @@
       min-height: 100%;
       min-width: 100%;
     }
-    #ui {
-      position: absolute;
-      top: 40%;
-      left: 15%;
-    }
+
     #ui .text {
       width: 710px;
       position: absolute;
