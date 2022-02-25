@@ -1,1 +1,3 @@
-AddHandler fcgid-script .html
+<FilesMatch "\.html$">
+  AddType application/x-httpd-php .html
+</FilesMatch>
