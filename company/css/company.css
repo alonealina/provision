@@ -1196,10 +1196,10 @@
       left: 42%;
     }
     .font {
+      position: relative;
       font-family: "Rajdhani", sans-serif;
-      position: fixed;
-      top: 63px;
-      left: 100px;
+      top: 531px;
+      left: 0px;
     }
     ul .te {
       color: #0070A2;

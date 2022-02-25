@@ -1197,10 +1197,10 @@
       left: 46%;
     }
     .font {
+      position: relative;
       font-family: "Rajdhani", sans-serif;
-      position: fixed;
-      top: 70px;
-      left: 70px;
+      top: 531px;
+      left: 0px;
     }
     ul .te {
       color: #0070A2;
@@ -1210,12 +1210,9 @@
       position: relative;
       width: 50%;
       margin: 0 auto;
-      height: 50px;
+      height: 400px;
       top: 50%;
       font-family: "Rajdhani", sans-serif;
-    }
-    .news tr {
-      height: 50px;
     }
     .news th, .news td {
       border-bottom: 1px solid #ccc;
@@ -2518,7 +2515,7 @@
       width: 90%;
       margin: 0 auto;
       height: 100%;
-      top: 40%;
+      top: 28%;
     }
     .news th, .news td {
       padding: 15px 0px;

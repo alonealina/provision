@@ -1161,6 +1161,7 @@
       display: inline-block;
       padding: 20px 50px 5px 0px;
       border-bottom: 1px solid #ffffff;
+      z-index:9000;
     }
     li {
       width: 160px;
@@ -1171,6 +1172,7 @@
       top: 20px;
       display: flex;
       width: 100%;
+      z-index:9000;
     }
     .logo {
       position: relative;
@@ -1296,7 +1298,7 @@
     .font {
       position: relative;
       font-family: "Rajdhani", sans-serif;
-      top: 515px;
+      top: 531px;
       left: 0px;
     }
   }
