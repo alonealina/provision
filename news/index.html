@@ -3,7 +3,7 @@
 <head>
   <meta name="robots" content="noindex" />
   <meta charset="utf-8">
-  <title>provision</title>
+  <title>PROVISION -NEWS-</title>
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&amp;display=swap">
@@ -14,8 +14,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap" rel="stylesheet"> </head>
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png" sizes="16x16">
 <body>
-  <!-- ローディング画面 -->
   <div id="loading">
     <div id="ui4">
       <div class="text">
@@ -291,16 +291,10 @@
     });
   </script>
   <script>
-    //=============================================================
-    // 関数名：writeCookie
-    // 引数　：key　cokkieに登録するキー
-    // 引数　：v　　cokkieに登録する値
-    // 備考　：指定されたキーと値の組み合わせをCookieに書き込む
-    //=============================================================
     function writeCookie( key, v ){
       var str = key + "=" + escape( v ) + ";";
       var dt = new Date();
-      dt.setDate( dt.getDate() + 100 );	//Cookieの有効期限：デフォルトは100日間とする
+      dt.setDate( dt.getDate() + 100 );	
       str += "expires=" + dt.toGMTString() + ";";
       document.cookie = str;
       return false;
