@@ -297,7 +297,7 @@
     function writeCookie( key, v ){
       var str = key + "=" + escape( v ) + ";";
       var dt = new Date();
-      dt.setDate( dt.getDate() + 100 );	//Cookieの有効期限：デフォルトは100日間とする
+      dt.setDate( dt.getDate() + 100 );
       str += "expires=" + dt.toGMTString() + ";";
       document.cookie = str;
       return false;
@@ -361,14 +361,12 @@
   </script>
   <!--sp_menu------------------------------------------------------------------------>
 
-  <!--▽▽jQuery▽▽-->
   <script>
     $('#hamburger').on('click', function(){
         $('.icon').toggleClass('close');
         $('.sm').slideToggle();
         });
   </script>
-  <!--△△jQuery△△-->
   <div id="ui">
     <div class="text">
       <div class="text_inner1">

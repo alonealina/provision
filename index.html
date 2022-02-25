@@ -216,7 +216,6 @@
     }
   </script>
   <div id="registration_pc"> <span class="switchable-video-area">
-<!------------------------------ページ開閉時に流れる動画部分------------------------------------->
 <button><p class="switchable-btn">
 <img src="assets/img/on.png" class="btn2">      
 </p></button>
@@ -224,68 +223,31 @@
 <div id="videoArea" class="video-area2 vide">
     <button><p class="btn1">skip</p></button>
     <video id="myVideo" class="video switchable-video" poster="img/movie.jpg" src="assets/img/glitch_1.mp4" webkit-playsinline playsinline muted autoplay>
-    <!--
-    poster：動画ファイルが利用できない環境で代替表示される画像
-    webkit-playsinline：iOS 9までのSafari用インライン再生指定
-    playsinline：iOS 10以降のSafari用インライン再生指定
-    muted：音声をミュートさせる
-    autoplay：動画を自動再生させる
-    loop：動画をループさせる
-    controls：コントロールバーを表示する
-    -->
     <source  type="video/mp4">
-    <p>動画を再生できる環境ではありません。</p>
+    <p>It is not an environment where you can play videos.</p>
     </video>
     </div>
     <div id="videoArea" class="video-area2 vide">
         <button><p class="btn1">skip</p></button>
         <video id="myVideo" class="video switchable-video" poster="img/movie.jpg" src="assets/img/glitch_1.mp4" webkit-playsinline playsinline muted autoplay>
-        <!--
-        poster：動画ファイルが利用できない環境で代替表示される画像
-        webkit-playsinline：iOS 9までのSafari用インライン再生指定
-        playsinline：iOS 10以降のSafari用インライン再生指定
-        muted：音声をミュートさせる
-        autoplay：動画を自動再生させる
-        loop：動画をループさせる
-        controls：コントロールバーを表示する
-        -->
         <source  type="video/mp4">
-        <p>動画を再生できる環境ではありません。</p>
+        <p>It is not an environment where you can play videos.</p>
         </video>
     </div>
     <div id="videoArea" class="video-area2 vide">
         <button><p class="btn1">skip</p></button>
         <video id="myVideo" class="video switchable-video" poster="img/movie.jpg" src="assets/img/glitch_1.mp4" webkit-playsinline playsinline muted autoplay>
-        <!--
-        poster：動画ファイルが利用できない環境で代替表示される画像
-        webkit-playsinline：iOS 9までのSafari用インライン再生指定
-        playsinline：iOS 10以降のSafari用インライン再生指定
-        muted：音声をミュートさせる
-        autoplay：動画を自動再生させる
-        loop：動画をループさせる
-        controls：コントロールバーを表示する
-        -->
         <source  type="video/mp4">
-        <p>動画を再生できる環境ではありません。</p>
+        <p>It is not an environment where you can play videos.</p>
         </video>
         </div>
         <div id="videoArea" class="video-area2 vide">
             <button><p class="btn1">skip</p></button>
             <video id="myVideo" class="video switchable-video" poster="img/movie.jpg" src="assets/img/glitch_1.mp4" webkit-playsinline playsinline muted autoplay>
-            <!--
-            poster：動画ファイルが利用できない環境で代替表示される画像
-            webkit-playsinline：iOS 9までのSafari用インライン再生指定
-            playsinline：iOS 10以降のSafari用インライン再生指定
-            muted：音声をミュートさせる
-            autoplay：動画を自動再生させる
-            loop：動画をループさせる
-            controls：コントロールバーを表示する
-            -->
             <source  type="video/mp4">
-            <p>動画を再生できる環境ではありません。</p>
+            <p>It is not an environment where you can play videos.</p>
             </video>
         </div>
-<!------------------------------ページ開閉時に流れる動画部分------------------------------------->
     </span>
 </div>
   <div id="container">
@@ -305,17 +267,8 @@
             <div class="p-index-kv_scroll-line js-scroll-line"></div>SCROLL </div>
           <header id="header">
             <div id="video-area"> <video id="video" poster="assets/img/sp.gif" webkit-playsinline playsinline muted autoplay loop>
-  <!--
-  poster：動画ファイルが利用できない環境で代替表示される画像
-  webkit-playsinline：iOS 9までのSafari用インライン再生指定
-  playsinline：iOS 10以降のSafari用インライン再生指定
-  muted：音声をミュートさせる
-  autoplay：動画を自動再生させる
-  loop：動画をループさせる
-  controls：コントロールバーを表示する
-  -->
   <source src="assets/img/StudioPV02.mp4" type="video/mp4">
-  <p>動画を再生できる環境ではありません。</p>
+  <p>It is not an environment where you can play videos.</p>
   </video>
             </div>
           </header>
@@ -384,37 +337,26 @@
             });
           </script>
           <script>
-            //=============================================================
-            	// 関数名：writeCookie
-            	// 引数　：key　cokkieに登録するキー
-            	// 引数　：v　　cokkieに登録する値
-            	// 備考　：指定されたキーと値の組み合わせをCookieに書き込む
-            	//=============================================================
             	function writeCookie( key, v ){
             		var str = key + "=" + escape( v ) + ";";
             		var dt = new Date();
-            		dt.setDate( dt.getDate() + 100 );	//Cookieの有効期限：デフォルトは100日間とする
+            		dt.setDate( dt.getDate() + 100 );
             		str += "expires=" + dt.toGMTString() + ";";
             		document.cookie = str;
             		return false;
             	}
-            	//=============================================================
-            	// 関数名：readCookie
-            	// 引数　：key　読取値が保存されているキー
-            	// 備考　：指定されたキーの値をCookieから読み取って返す
-            	//=============================================================
             	function readCookie( key ){
             		var sCookie = document.cookie;
-            		var aData = sCookie.split(";");			//Cookieの文字列を「;」で分割する
+            		var aData = sCookie.split(";");
             		var oExp = new RegExp(" ", "g");
-            		key = key.replace(oExp,"");				//keyからスペースを除去する（念のため）
+            		key = key.replace(oExp,"");
             		var i = 0;
-            		while ( aData[i] ) { 					//分割したCookieの中からkeyに該当する「key,valueの組み合わせ」を検索し、valueを抜き出す
+            		while ( aData[i] ) {
             			var aWord = aData[i].split("=");
             			aWord[0] = aWord[0].replace( oExp,"");
-            			if( key == aWord[0] ) return unescape(aWord[1]);	//keyに該当するデータが見つかった場合、valueを返す
-            			if( ++i >= aData.length ) {			//keyに該当するデータが見つからなかった場合
-            				break;							//検索ループを強制的に抜ける
+            			if( key == aWord[0] ) return unescape(aWord[1]);
+            			if( ++i >= aData.length ) {
+            				break;
             			}
             		}
             		return "";
@@ -693,52 +635,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js">
     </script>
     <script>
-      //SVGの初期設定
-      
-      var logoVivus1;//SVG設定
-      
-      
-      //SVG初期設定
+      var logoVivus1;
       function VivusInit(){
       	logoVivus1 = new Vivus('logo',
       		{
-      			start: 'autostart',//アニメーションの自動再生
-                  duration: 100 , //アニメーションの時間。数字が小さくなれば速くなり、大きくなれば遅くなる
-      			type: 'scenario',// アニメーションのタイプを設定
-      			pathTimingFunction: Vivus.EASE,//動きの加速減速設定
+      			start: 'autostart',
+                  duration: 100 ,
+      			type: 'scenario',
+      			pathTimingFunction: Vivus.EASE,
       		},
       		function(obj){
-      			$("#logo").attr("class", "done");//描画が終わったらdoneというクラスを追加
+      			$("#logo").attr("class", "done");
       		}
       	);
       	logoVivus1.stop();		
       }
       
-      
-      
-      //スクロールをしたらSVGが出現する設定
       function VivusAnime(){
-      	//スクロールをしたら1つめのSVG id="logo"が出現する設定
-      	var elemPos = $("#logo").offset().top - 50;//要素より、50px上の位置まで来たら出現
+      	var elemPos = $("#logo").offset().top - 50;
       	var scroll = $(window).scrollTop();
       	var windowHeight = $(window).height();
       	if (scroll >= elemPos - windowHeight) {
-      		logoVivus1.play(1);//描画される速さ。数が大きくなるほど速い
+      		logoVivus1.play(1);
       	}
       }
       
-      // 画面をスクロールをしたら動かしたい場合の記述
       $(window).scroll(function () {
-      	VivusAnime();/* SVGアニメーション用の関数を呼ぶ*/
+      	VivusAnime();
       });
-      // ここまで画面をスクロールをしたら動かしたい場合の記述
-      
-      // 画面が読み込まれたらすぐに動かしたい場合の記述
       $(window).on('load', function () {
-      	VivusInit(); //SVG初期設定
-      	VivusAnime();/* SVGアニメーション用の関数を呼ぶ*/
+      	VivusInit();
+      	VivusAnime();
       });
-      // ここまで画面が読み込まれたらすぐに動かしたい場合の記述
     </script>
 </body>
 </body>

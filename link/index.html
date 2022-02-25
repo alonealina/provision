@@ -209,8 +209,6 @@
       </defs>
       <rect id="P1000250" width="1920" height="1080" fill="url(#pattern)"/>
     </svg>
-        <!-- <img src="./img/P1000250.jpg"> -->
-        <!--/video-area-->
       </div>
     </header>
   </div>
@@ -290,16 +288,10 @@
     });
   </script>
   <script>
-    //=============================================================
-    // 関数名：writeCookie
-    // 引数　：key　cokkieに登録するキー
-    // 引数　：v　　cokkieに登録する値
-    // 備考　：指定されたキーと値の組み合わせをCookieに書き込む
-    //=============================================================
     function writeCookie( key, v ){
       var str = key + "=" + escape( v ) + ";";
       var dt = new Date();
-      dt.setDate( dt.getDate() + 100 );	//Cookieの有効期限：デフォルトは100日間とする
+      dt.setDate( dt.getDate() + 100 );
       str += "expires=" + dt.toGMTString() + ";";
       document.cookie = str;
       return false;

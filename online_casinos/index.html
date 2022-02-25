@@ -289,37 +289,26 @@
     });
   </script>
   <script>
-    //=============================================================
-    // 関数名：writeCookie
-    // 引数　：key　cokkieに登録するキー
-    // 引数　：v　　cokkieに登録する値
-    // 備考　：指定されたキーと値の組み合わせをCookieに書き込む
-    //=============================================================
     function writeCookie( key, v ){
       var str = key + "=" + escape( v ) + ";";
       var dt = new Date();
-      dt.setDate( dt.getDate() + 100 );	//Cookieの有効期限：デフォルトは100日間とする
+      dt.setDate( dt.getDate() + 100 );
       str += "expires=" + dt.toGMTString() + ";";
       document.cookie = str;
       return false;
     }
-    //=============================================================
-    // 関数名：readCookie
-    // 引数　：key　読取値が保存されているキー
-    // 備考　：指定されたキーの値をCookieから読み取って返す
-    //=============================================================
     function readCookie( key ){
       var sCookie = document.cookie;
-      var aData = sCookie.split(";");			//Cookieの文字列を「;」で分割する
+      var aData = sCookie.split(";");
       var oExp = new RegExp(" ", "g");
-      key = key.replace(oExp,"");				//keyからスペースを除去する（念のため）
+      key = key.replace(oExp,"");
       var i = 0;
-      while ( aData[i] ) { 					//分割したCookieの中からkeyに該当する「key,valueの組み合わせ」を検索し、valueを抜き出す
+      while ( aData[i] ) {
         var aWord = aData[i].split("=");
         aWord[0] = aWord[0].replace( oExp,"");
-        if( key == aWord[0] ) return unescape(aWord[1]);	//keyに該当するデータが見つかった場合、valueを返す
-        if( ++i >= aData.length ) {			//keyに該当するデータが見つからなかった場合
-          break;							//検索ループを強制的に抜ける
+        if( key == aWord[0] ) return unescape(aWord[1]);
+        if( ++i >= aData.length ) {
+          break;
         }
       }
       return "";
@@ -361,14 +350,12 @@
   </script>
 
 <!--sp_menu------------------------------------------------------------------------>
-  <!--▽▽jQuery▽▽-->
   <script>
     $('#hamburger').on('click', function(){
         $('.icon').toggleClass('close');
         $('.sm').slideToggle();
         });
   </script>
-  <!--△△jQuery△△-->
   <div id="ui">
     <div class="text">
       <div class="text_inner1">
