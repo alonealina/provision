@@ -1169,6 +1169,7 @@
       display: flex;
       width: 100%;
       pointer-events: auto;
+      z-index: 9000;
     }
     .logo {
       position: relative;
