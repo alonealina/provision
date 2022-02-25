@@ -1210,9 +1210,12 @@
       position: relative;
       width: 50%;
       margin: 0 auto;
-      height: 400px;
+      height: 50px;
       top: 50%;
       font-family: "Rajdhani", sans-serif;
+    }
+    .news tr {
+      height: 50px;
     }
     .news th, .news td {
       border-bottom: 1px solid #ccc;
@@ -2515,7 +2518,7 @@
       width: 90%;
       margin: 0 auto;
       height: 100%;
-      top: 28%;
+      top: 40%;
     }
     .news th, .news td {
       padding: 15px 0px;
