@@ -1348,7 +1348,7 @@
       font-size: 17px;
       font-weight: bold;
       position: fixed;
-      z-index: 11;
+      z-index: 200;
       top: 0;
       left: 0;
       color: #fff;
